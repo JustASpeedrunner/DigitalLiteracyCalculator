@@ -1,0 +1,99 @@
+First thing we need to do is create the functions in the code that make the calculator add, subtract, multiply and divide.
+This is done with a simple bit of code as seen below
+
+def [opperation](x, y):
+    return x + y
+    
+Where it says "[opperation]" is where you will put "add" "subtract" etc.
+To explain the code it says define (allowing the code to know what this is) [opperation](x,y) (the x,y are going to be our two numbers which are to be opperated on.)
+Below this is the return of this function, or what the computer gives you back after it does the math. In this example, it will add x and y. 
+We do the same for the rest of the opperations with their respective symbols. - + * /
+
+[MAKE SURE YOU DO NOT MIX UP FUNCTION NAMES AND THE SYMBOL USED]:
+    This will make the code not function and, for example, when you use the multiplication function it instead adds the numbers.
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+These are the print statements we'll need, using print("") will make whatever is inside the parenthesis appear in the terminal as text.
+As you will see later, we can do more with print statements then just show prewritten text but that's for later
+
+Next up we initiate what's called a "while loop." 
+A while loop statement in Python repeatedly executes a target statement as long as a given condition is true.
+For example, 
+
+while 2 + 2 = 4:
+    print("4 / 2 = 4")
+    
+Now, this would constantly print that statement to the terminal until you either changed math or stopped the program.
+We clearly don't want a constant print loop, but we will use a loop.
+
+while True:
+
+This loop makes the code contained inside it constantly run, so it is infinite, just simpler than our example from before.
+This will contain all of our user input checks, to detect whenever the user makes a decision.
+
+    choice = input("Enter choice(1/2/3/4): ")
+    
+This checks to see if our user will select to add, subtract, multiply, or divide like we printed with out print statements before.
+
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        
+Here we initiate an if else statement (the else comes after we create all the code inside the if section), this essentially just does what it sounds like it would.
+"if x is true, do y, else (if x is not true) do z"
+This if statement checks to see if the user chose one of the opperations or not. If it sees that they did it will ask them to input their first and second number.
+This then inputs them into the variables "num1" and "num2" for later use.
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+We then create if statements inside of this one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

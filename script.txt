@@ -70,30 +70,3 @@ Below this we put a break which tells the computer to end the loop we started ea
 Which in this example is the else statement to the first if statement we started. 
 This simply tells the user it picked an invalid number when selecting the opperation. 
 This would come up if the user selected 5 or 6 instead of our 1,2,3,4 options
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

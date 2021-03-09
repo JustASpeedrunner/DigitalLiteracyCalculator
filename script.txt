@@ -1,11 +1,11 @@
 First thing we need to do is create the functions in the code that make the calculator add, subtract, multiply and divide.
 This is done with a simple bit of code as seen below
 
-def [opperation](x, y):
+def add(x, y):
     return x + y
     
-Where it says "[opperation]" is where you will put "add" "subtract" etc.
-To explain the code it says define (allowing the code to know what this is) [opperation](x,y) (the x,y are going to be our two numbers which are to be opperated on.)
+Where it says "add" is where you will put all your other opperations
+To explain the code it says define (allowing the code to know what this is) add(x,y) (the x,y are going to be our two numbers which are to be opperated on.)
 Below this is the return of this function, or what the computer gives you back after it does the math. In this example, it will add x and y. 
 We do the same for the rest of the opperations with their respective symbols. - + * /
 
@@ -52,24 +52,24 @@ This then inputs them into the variables "num1" and "num2" for later use.
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
-We then create if statements inside of this one
+We then create if statements inside of this one it's job is to figure what opperation to use for the user's numbers. 
+For these we tell the computer that whatever choice was picked, to print their first and second number with the opperation symbol in between
+Next it uses the opperation function we defined at the beginning to do the opperation, and print that in the console as well.
 
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+            
+The statements after use elif, which are the else statement to the previous if statement (or elif statement) as well as their own if statement
+These do the same as the first statement just with the 4 opperations and the elif beginning.
 
+        break
+    else:
+        print("Invalid Input")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Below this we put a break which tells the computer to end the loop we started earlier, allowing the code below it to run.
+Which in this example is the else statement to the first if statement we started. 
+This simply tells the user it picked an invalid number when selecting the opperation. 
+This would come up if the user selected 5 or 6 instead of our 1,2,3,4 options
 
 
 
